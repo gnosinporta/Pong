@@ -6,4 +6,6 @@ Control the paddles with keys w/s and up/down.
 
 ⚡ W O R K - I N - P R O G R E S S ⚡
 
+🦾 V 1.0 - september 13, 2022
+
 🔧 L A S T - U P D A T E : september 13, 2022

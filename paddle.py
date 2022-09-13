@@ -1,4 +1,4 @@
-from turtle import Turtle
+from turtle import Turtle, position
 
 # constants
 STRETCH_WID = 5
@@ -21,6 +21,7 @@ class Paddle(Turtle):
         self.penup()
         self.goto(position)
         self.movement = MOVEMENT
+        self.position = position
 
     # the paddle accelerates its movement everytime the ball bounces
     # until a certain point
@@ -38,3 +39,6 @@ class Paddle(Turtle):
         if self.ycor() > -UP_DOWN_MARGINS:
             new_y = self.ycor() - self.movement
             self.goto(self.xcor(), new_y)
+
+    def reset(self):
+        self.goto(self.position)
